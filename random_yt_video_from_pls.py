@@ -5,11 +5,13 @@ import googleapiclient.discovery
 from urllib.parse import parse_qs, urlparse
 from telegram import Update
 from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler, CallbackContext
+import configtb
 
 # Replace with your own TELEGRAM API token, Google API key and YouTube playlist ID
-api_token = 'TELEGRAM BOT TOKEN'
-key = 'GOOGLE API KEY'
-playlist_id = 'YOUTUBE PLAYLIST ID'
+api_token = configtb.api_token
+key = configtb.key
+playlist_id = configtb.playlist_id
+
 url = f'https://www.youtube.com/playlist?list={playlist_id}'
 
 logging.basicConfig(
