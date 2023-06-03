@@ -2,6 +2,9 @@
 
 Random YouTube video link from playlist using [YouTube Data API v3](https://console.developers.google.com), [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot), *requests*, *random* and *urlllib* written in Python.
 
+Бот для телеграмма, по команде /video выдаёт случайное видео из определенного плейлиста.
+Настройки в файле configtb.py — ключ Google API, токен бота телеграмма и ID плейлиста в YouTube. 
+
 ## Prerequisites
 Google Developer Key for YouTube</br>
 key = 'YOUR_DEVELOPER_KEY'</br>
